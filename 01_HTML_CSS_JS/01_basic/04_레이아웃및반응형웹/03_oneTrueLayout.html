@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 500px;
+        margin: 10px auto;
+      }
+      #top {
+        background-color: green;
+      }
+      #middle {
+        display: flex;
+        /*
+        flex : 요소들을 정렬하기 위한 레이아웃 방식 
+        
+        특징
+        - 부모요소에 display : flex 속성으로 플렉스 컨테이너 지정
+        - 자식 요소들을 원하는 형태로 정렬하는데 사용
+        */
+
+        /* 
+        justify-contnet : 
+
+        center : 가운데 정렬
+        flex-end : 오른쪽 정렬
+        space-around : 동일한 여백
+        space-evenly : 동일한 간격
+        space-between : 양쪽 끝 정렬
+        */
+      }
+      #left {
+        background-color: red;
+        width: 120px;
+        margin: 0 0 auto 0;
+      }
+      #right {
+        background-color: blue;
+        width: 380px;
+      }
+      #bottom {
+        background-color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
+      mollitia? Vero ratione consequatur, ipsa necessitatibus quo est
+      repellendus, dicta accusamus ipsam doloremque quasi fugit esse placeat
+      quia earum ipsum porro?
+    </div>
+    <div id="middle">
+      <div id="left">
+        <div id="left">
+          Lorem ipsum dolor sit amet , consectetur adipiscing elit .
+        </div>
+      </div>
+      <div id="right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+        provident adipisci totam eos vero a dolorum temporibus illum qui
+        excepturi explicabo nam repellat corrupti magnam itaque commodi numquam,
+        laudantium officiis.
+      </div>
+    </div>
+    <div id="bottom">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+      dolorem suscipit beatae qui quae, fugiat ipsa placeat provident deserunt
+      distinctio quis saepe quisquam quibusdam vitae ducimus iure voluptas
+      facere nisi!
+    </div>
+  </body>
+</html>
